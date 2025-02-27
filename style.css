@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(188, 188, 188);
+    text-align: center;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    margin-left: 40%;
+    margin-top: 10%;
+    column-gap: 5px;
+    row-gap: 5px;
+
+}
+
+.board div{
+    display: flex;
+    background-color: rgb(238, 240, 240);
+    border: 1px solid rgb(150, 150, 150); 
+    height: 100px;
+    width: 100px;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.board div:hover{
+    background-color: rgb(150, 91, 208);
+}
+
+.detail{
+    margin-top: 100px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+#turn, #winner{
+    padding: 10px;
+    margin: 10px;
+}
+
